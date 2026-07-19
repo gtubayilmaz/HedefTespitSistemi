@@ -64,7 +64,6 @@ Bağlantı şemasını [devre_sema.jpeg](devre_sema.jpeg) içinde görebilirsini
 
 - Ölçümler arasında yaklaşık 60 ms bekleme bırakılır.
 - `distance_cm` ve `echo_pulse_us` değişkenleri CubeIDE Debug > Live Expressions bölümünden izlenebilir.
-- GitHub'a yüklerken `proje/Debug/` klasörü derleme çıktısı içerir; repoda tutmak istemiyorsanız hariç bırakabilirsiniz.
 
 ## Gereksinimler
 
