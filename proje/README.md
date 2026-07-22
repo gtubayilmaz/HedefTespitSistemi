@@ -1,6 +1,6 @@
 # STM32 Mesafe Ölçüm Projesi
 
-Bu klasör, STM32F407 tabanlı kart üzerinde HC-SR04 ultrasonik sensör ile mesafe ölçümü yapan STM32CubeIDE projesini içerir. Ölçüm, TIM4 Input Capture ile ECHO darbe süresini okuyarak yapılır ve sonuç santimetre cinsinden hesaplanır.
+Bu klasör, STM32 projesinin görsel ve dokümantasyon bölümünü içerir. Asıl STM32CubeIDE proje dosyaları [kod/](kod/) altındadır.
 
 ## Proje Özeti
 
@@ -13,15 +13,15 @@ Bu klasör, STM32F407 tabanlı kart üzerinde HC-SR04 ultrasonik sensör ile mes
 
 | Yol | Açıklama |
 | --- | --- |
-| [HedefTespitSistemi.ioc](HedefTespitSistemi.ioc) | STM32CubeMX/STM32CubeIDE proje yapılandırması. |
-| [Core/Src/main.c](Core/Src/main.c) | Uygulamanın ana kodu. TRIG üretimi, TIM4 kesme akışı, darbe süresi ölçümü ve mesafe hesabı burada bulunur. |
-| [Core/Inc/main.h](Core/Inc/main.h) | Ana uygulamanın ortak başlık dosyası. Pin ve fonksiyon bildirimleri burada yer alır. |
-| [Core/Src/stm32f4xx_it.c](Core/Src/stm32f4xx_it.c) | Kesme yönlendirmeleri ve interrupt handler yapısı. |
-| [Core/Src/stm32f4xx_hal_msp.c](Core/Src/stm32f4xx_hal_msp.c) | HAL seviyesinde çevre birimi başlangıç ayarları. |
-| [Core/Startup/startup_stm32f407vgtx.s](Core/Startup/startup_stm32f407vgtx.s) | Başlangıç assembly kodu ve vektör tablosu. |
-| [STM32F407VGTX_FLASH.ld](STM32F407VGTX_FLASH.ld) | Flash bellek yerleşim dosyası. |
-| [STM32F407VGTX_RAM.ld](STM32F407VGTX_RAM.ld) | RAM bellek yerleşim dosyası. |
-| [../devre_sema.jpeg](../devre_sema.jpeg) | Donanım bağlantı şeması. |
+| [kod/HedefTespitSistemi.ioc](kod/HedefTespitSistemi.ioc) | STM32CubeMX/STM32CubeIDE proje yapılandırması. |
+| [kod/Core/Src/main.c](kod/Core/Src/main.c) | Uygulamanın ana kodu. TRIG üretimi, TIM4 kesme akışı, darbe süresi ölçümü ve mesafe hesabı burada bulunur. |
+| [kod/Core/Inc/main.h](kod/Core/Inc/main.h) | Ana uygulamanın ortak başlık dosyası. Pin ve fonksiyon bildirimleri burada yer alır. |
+| [kod/Core/Src/stm32f4xx_it.c](kod/Core/Src/stm32f4xx_it.c) | Kesme yönlendirmeleri ve interrupt handler yapısı. |
+| [kod/Core/Src/stm32f4xx_hal_msp.c](kod/Core/Src/stm32f4xx_hal_msp.c) | HAL seviyesinde çevre birimi başlangıç ayarları. |
+| [kod/Core/Startup/startup_stm32f407vgtx.s](kod/Core/Startup/startup_stm32f407vgtx.s) | Başlangıç assembly kodu ve vektör tablosu. |
+| [kod/STM32F407VGTX_FLASH.ld](kod/STM32F407VGTX_FLASH.ld) | Flash bellek yerleşim dosyası. |
+| [kod/STM32F407VGTX_RAM.ld](kod/STM32F407VGTX_RAM.ld) | RAM bellek yerleşim dosyası. |
+| [devre_sema.jpeg](devre_sema.jpeg) | Donanım bağlantı şeması. |
 
 ## Donanım Bağlantıları
 
@@ -31,7 +31,7 @@ Mevcut kod ve CubeMX yapılandırmasına göre temel bağlantılar şöyledir:
 - ECHO: PB8 / TIM4 CH3
 - Besleme: 5V ve GND
 
-Bağlantı şemasını [../devre_sema.jpeg](../devre_sema.jpeg) içinde görebilirsiniz.
+Bağlantı şemasını [devre_sema.jpeg](devre_sema.jpeg) içinde görebilirsiniz.
 
 ## Çalışma Mantığı
 
@@ -44,7 +44,7 @@ Bağlantı şemasını [../devre_sema.jpeg](../devre_sema.jpeg) içinde görebil
 ## Kurulum ve Kullanım
 
 1. Projeyi STM32CubeIDE ile açın.
-2. [HedefTespitSistemi.ioc](HedefTespitSistemi.ioc) dosyasını kullanarak proje ayarlarını yükleyin.
+2. [kod/HedefTespitSistemi.ioc](kod/HedefTespitSistemi.ioc) dosyasını kullanarak proje ayarlarını yükleyin.
 3. Gerekirse kod üretimini yeniden çalıştırın.
 4. Kartı ve sensörü şemaya göre bağlayın.
 5. Projeyi derleyin ve karta yükleyin.
