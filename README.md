@@ -17,6 +17,7 @@ Kök dizinde ayrıca donanım şeması için [devre_sema.jpeg](devre_sema.jpeg) 
 | [goruntu_isleme/requirements.txt](goruntu_isleme/requirements.txt) | Python bağımlılıkları. |
 | [goruntu_isleme/yolo11n.pt](goruntu_isleme/yolo11n.pt) | Varsayılan YOLO ağırlıkları. |
 | [proje/](proje/) | STM32CubeIDE ile açılan gömülü sistem projesi. |
+| [proje/README.md](proje/README.md) | STM32 projesinin kurulum, bağlantı ve kullanım rehberi. |
 | [proje/Core/Src/main.c](proje/Core/Src/main.c) | STM32 uygulamasının ana kodu. |
 | [proje/HedefTespitSistemi.ioc](proje/HedefTespitSistemi.ioc) | STM32CubeMX proje yapılandırması. |
 | [devre_sema.jpeg](devre_sema.jpeg) | STM32 tarafı için bağlantı şeması. |
@@ -39,7 +40,7 @@ Ayrıntılı açıklama ve komut satırı seçenekleri için [goruntu_isleme/REA
 
 Bu bölüm, HC-SR04 sensörü ile TIM4 Input Capture tabanlı mesafe ölçümü yapan STM32CubeIDE projesini içerir.
 
-Projeyi açmak için [proje/HedefTespitSistemi.ioc](proje/HedefTespitSistemi.ioc) dosyasını STM32CubeIDE içinde kullanın. Donanım bağlantı detayı için [devre_sema.jpeg](devre_sema.jpeg) dosyasına bakabilirsiniz.
+Detaylı kurulum ve çalışma adımları için [proje/README.md](proje/README.md) dosyasına bakın. Projeyi açmak için [proje/HedefTespitSistemi.ioc](proje/HedefTespitSistemi.ioc) dosyasını STM32CubeIDE içinde kullanın. Donanım bağlantı detayı için [devre_sema.jpeg](devre_sema.jpeg) dosyasına bakabilirsiniz.
 
 ## GitHub Düzeni
 
